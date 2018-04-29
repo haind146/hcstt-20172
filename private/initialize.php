@@ -28,6 +28,8 @@ foreach ($luat_array as $luat) {
     $dieukien_obj = DieuKien::find_by_id($luat->dieukienid);
     $dieukien_obj->load_list_menhde();
     $luat->set_dieukien_obj($dieukien_obj);
+    $menhdekq_obj = MenhDe::find_by_id($luat->menhdeid);
+    $luat->set_menhdekq_obj($menhdekq_obj);
 }
 
 

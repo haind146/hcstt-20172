@@ -14,6 +14,10 @@ class DieuKien extends DbObject
     public $id;
     public $listMenhde = [];
 
+
+
+
+
     public function load_list_menhde(){
         $sql = "SELECT menhde.* FROM dieukien_menhde, menhde WHERE dieukien_menhde.menhdeid = menhde.id AND dieukienid = '" . $this->id . "'; ";
         $this->listMenhde = MenhDe::find_by_sql($sql);

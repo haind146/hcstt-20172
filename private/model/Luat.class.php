@@ -26,12 +26,13 @@ class Luat extends DbObject
         $this->dochinhxac = 1;
     }
 
-    function load_dieukien(){
-        $this->dieukien_obj = DieuKien::find_by_id($this->dieukienid);
-        return DieuKien::find_by_id();
-    }
+
     public function set_dieukien_obj(DieuKien $dieukien_obj){
         $this->dieukien_obj = $dieukien_obj;
+    }
+
+    public function set_menhdekq_obj(MenhDe $menhdekq_obj){
+        $this->menhdekq_obj = $menhdekq_obj;
     }
 
 

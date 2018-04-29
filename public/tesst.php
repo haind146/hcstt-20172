@@ -6,9 +6,9 @@
  * Time: 11:17 PM
  */
 require_once ('../private/initialize.php');
-$luat_arr = Luat::find_all();
-foreach ($luat_arr as $luat) {
-    echo $luat->menhdeid;
-}
+foreach ($luat_array as $luat) {
+    $luat->printLuat();
 
-echo DieuKien::them_dieu_kien();
+}
+?>
+

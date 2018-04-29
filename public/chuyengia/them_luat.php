@@ -73,6 +73,13 @@ if(!empty($_POST["condition"]) && !empty($_POST["ketluan"]) ){
         </ul>
     </div>
 </nav>
+<div class="container">
+    <nav class="nav justify-content-lg-center">
+        <a class="nav-link active" href="them_luat.php">Thêm luật</a>
+        <a class="nav-link" href="them_menh_de.php">Thêm mệnh đề</a>
+
+    </nav>
+</div>
 
 <div class="container">
     <h3 class="text-center" style="text-transform: uppercase;margin-top: 1em;">Thêm luật mới</h3>
